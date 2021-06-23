@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+
+namespace MainProject._10_UserElements
+{
+    [PetzoldExampleProject(chapterNumber: 10, page: 208)]
+    public class GetMedieval : Window
+    {
+        [STAThread]
+        static void Main(string[] args)
+        {
+            Application app = new Application();
+            app.Run(new GetMedieval());
+        }
+
+        public GetMedieval()
+        {
+            Title = "Get Medieval";
+            MedievalButton btn = new MedievalButton();
+            btn.Text = "Click this button";
+            btn.FontSize = 24;
+            btn.HorizontalAlignment = HorizontalAlignment.Center;
+            btn.VerticalAlignment = VerticalAlignment.Center;
+
+            btn.Padding = new Thickness(5, 20, 5, 20);
+            btn.Knock += ButtonOnKnock;
+            Content = btn;
+        }
+
+        void ButtonOnKnock(object sender, RoutedEventArgs args)
+        {
+            MedievalButton btn = args.Source as MedievalButton;
+            MessageBox.Show("The button labeled \"" + btn.Text + "\" has been knocked.", Title);
+        }
+    }
+}

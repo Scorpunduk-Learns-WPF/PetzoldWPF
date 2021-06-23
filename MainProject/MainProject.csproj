@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A863B24A-BDE5-4C2E-B463-FFD3B21B6D50}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MainProject</RootNamespace>
+    <AssemblyName>MainProject</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="01_Intro\01_HandleAnEvent.cs" />
+    <Compile Include="01_Intro\02_InheritTheApp.cs" />
+    <Compile Include="01_Intro\03_ThrowWindowParty.cs" />
+    <Compile Include="01_Intro\04_InheritAppAndWindow.cs" />
+    <Compile Include="01_Intro\05_InheritTheWin.cs" />
+    <Compile Include="01_Intro\06_GrowAndShrink.cs" />
+    <Compile Include="01_Intro\07_TypeYourTile.cs" />
+    <Compile Include="02_Brushes\08_VaryTheBackground.cs" />
+    <Compile Include="02_Brushes\09_FlipThroughTheBrushes.cs" />
+    <Compile Include="02_Brushes\10_GradiateTheBrush.cs" />
+    <Compile Include="02_Brushes\11_AdjustTheGradient.cs" />
+    <Compile Include="02_Brushes\12_FollowTheRainbow.cs" />
+    <Compile Include="02_Brushes\13_ClickTheGradientCenter.cs" />
+    <Compile Include="02_Brushes\14_RotateTheGradientOrigin.cs" />
+    <Compile Include="03_ContentConceptions\15_DisplaySomeText.cs" />
+    <Compile Include="03_ContentConceptions\16_RecordKeyStrokes.cs" />
+    <Compile Include="03_ContentConceptions\17_ShowPetzoldsFace.cs" />
+    <Compile Include="03_ContentConceptions\18_ShapeAnEllipse.cs" />
+    <Compile Include="03_ContentConceptions\19_FormatTheText.cs" />
+    <Compile Include="03_ContentConceptions\20_ToggleBoldAndItalic.cs" />
+    <Compile Include="03_ContentConceptions\21_RenderTheGraphic.cs" />
+    <Compile Include="04_ButtonAndOthers\73_ClickTheButton.cs" />
+    <Compile Include="04_ButtonAndOthers\77_FormatTheButton.cs" />
+    <Compile Include="04_ButtonAndOthers\78_ImageTheButton.cs" />
+    <Compile Include="04_ButtonAndOthers\80_CommandTheButton.cs" />
+    <Compile Include="04_ButtonAndOthers\82_ToggleTheButton.cs" />
+    <Compile Include="04_ButtonAndOthers\85_BindTheButton.cs" />
+    <Compile Include="04_ButtonAndOthers\87_UriDialog.cs" />
+    <Compile Include="04_ButtonAndOthers\90_EditSomeText.cs" />
+    <Compile Include="04_ButtonAndOthers\92_EditSomeRichText.cs" />
+    <Compile Include="05_StackAndWrapPanels\31_StackTenButtons.cs" />
+    <Compile Include="05_StackAndWrapPanels\32_StackThirtyButtons.cs" />
+    <Compile Include="05_StackAndWrapPanels\33_ScrollFiftyButtons.cs" />
+    <Compile Include="05_StackAndWrapPanels\34_DesignButton.cs" />
+    <Compile Include="05_StackAndWrapPanels\35_TuneTheRadio.cs" />
+    <Compile Include="05_StackAndWrapPanels\36_ExploreDirectory.cs" />
+    <Compile Include="06_DockAndGrid\115_DockAroundTheBlock.cs" />
+    <Compile Include="06_DockAndGrid\117_MeetTheDockers.cs" />
+    <Compile Include="06_DockAndGrid\122_CalculateYourLife.cs" />
+    <Compile Include="06_DockAndGrid\125_EnterTheGrid.cs" />
+    <Compile Include="06_DockAndGrid\127_SpanTheCells.cs" />
+    <Compile Include="06_DockAndGrid\130_SplitNine.cs" />
+    <Compile Include="06_DockAndGrid\133_SplitTheClient.cs" />
+    <Compile Include="06_DockAndGrid\136_ScrollCustomColors.cs" />
+    <Compile Include="07_Canvas\141_PaintTheButton.cs" />
+    <Compile Include="07_Canvas\143_Tile.cs" />
+    <Compile Include="07_Canvas\146_PlayJeuDeTacquin.cs" />
+    <Compile Include="08_DependencyProperty\150_SetFontSizeProperty.cs" />
+    <Compile Include="08_DependencyProperty\157_SpaceButton.cs" />
+    <Compile Include="08_DependencyProperty\160_SpaceWindow.cs" />
+    <Compile Include="08_DependencyProperty\161_SetSpaceProperty.cs" />
+    <Compile Include="09_RoutedEvents\169_ExamineRoutedEvents.cs" />
+    <Compile Include="09_RoutedEvents\180_DrawCircles.cs" />
+    <Compile Include="09_RoutedEvents\186_ShadowTheStylus.cs" />
+    <Compile Include="09_RoutedEvents\190_ExamineKeyStrokes.cs" />
+    <Compile Include="10_UserElements\198_BetterEllipse.cs" />
+    <Compile Include="10_UserElements\200_RenderTheBetterEllipse.cs" />
+    <Compile Include="10_UserElements\202_MedievalButton.cs" />
+    <Compile Include="10_UserElements\208_GetMedieval.cs" />
+    <Compile Include="11_ElementsWithOneChild\213_EllipseWithChild.cs" />
+    <Compile Include="11_ElementsWithOneChild\216_EnlcoseElementInEllipse.cs" />
+    <Compile Include="11_ElementsWithOneChild\218_RoundedButtonDecorator.cs" />
+    <Compile Include="11_ElementsWithOneChild\220_RoundedButton.cs" />
+    <Compile Include="11_ElementsWithOneChild\222_CalculateInHEX.cs" />
+    <Compile Include="11_ElementsWithOneChild\229_BuildButtonFactory.cs" />
+    <Compile Include="11_ElementsWithOneChild\233_ColorCell.cs" />
+    <Compile Include="11_ElementsWithOneChild\235_ColorGrid.cs" />
+    <Compile Include="11_ElementsWithOneChild\241_SelectColor.cs" />
+    <Compile Include="12_UserPanels\244_UniformGridAlmost.cs" />
+    <Compile Include="12_UserPanels\246_DuplicateUniformGrid.cs" />
+    <Compile Include="12_UserPanels\248_CanvasClone.cs" />
+    <Compile Include="12_UserPanels\250_PaintOnCanvasClone.cs" />
+    <Compile Include="12_UserPanels\253_DiagonalPanel.cs" />
+    <Compile Include="12_UserPanels\256_DiagonalizeTheButton.cs" />
+    <Compile Include="12_UserPanels\259_RadialPanel.cs" />
+    <Compile Include="12_UserPanels\264_CircleTheButtons.cs" />
+    <Compile Include="13_ListBox\268_ListColorNames.cs" />
+    <Compile Include="13_ListBox\271_ListColorValues.cs" />
+    <Compile Include="13_ListBox\272_NamedColor.cs" />
+    <Compile Include="13_ListBox\275_ListNamedColors.cs" />
+    <Compile Include="13_ListBox\276_NamedBrush.cs" />
+    <Compile Include="13_ListBox\277_ListNamedBrushes.cs" />
+    <Compile Include="13_ListBox\279_ListColorShapes.cs" />
+    <Compile Include="13_ListBox\280_ListColoredLabels.cs" />
+    <Compile Include="13_ListBox\282_ListWithListBoxItems.cs" />
+    <Compile Include="13_ListBox\284_ColorListBoxItem.cs" />
+    <Compile Include="13_ListBox\286_ColorListBox.cs" />
+    <Compile Include="13_ListBox\287_ListColorsElegantly.cs" />
+    <Compile Include="13_ListBox\288_ListColorsEvenElegantier.cs" />
+    <Compile Include="13_ListBox\290_ColorGridBox.cs" />
+    <Compile Include="13_ListBox\292_SelectColorFromGrid.cs" />
+    <Compile Include="13_ListBox\294_ColorWheel.cs" />
+    <Compile Include="13_ListBox\295_SelectColorFromWheel.cs" />
+    <Compile Include="14_MenuHierarchy\300_PeruseTheMenu.cs" />
+    <Compile Include="14_MenuHierarchy\304_CheckTheWindowStyle.cs" />
+    <Compile Include="14_MenuHierarchy\306_CheckTheColor.cs" />
+    <Compile Include="14_MenuHierarchy\308_SelectColorFromMenuGrid.cs" />
+    <Compile Include="14_MenuHierarchy\310_CutCopyAndPaste.cs" />
+    <Compile Include="14_MenuHierarchy\314_ControlXCV.cs" />
+    <Compile Include="14_MenuHierarchy\317_CommandTheMenu.cs" />
+    <Compile Include="14_MenuHierarchy\321_PopupContextMenu.cs" />
+    <Compile Include="15_ToolsPanelStatusBar\326_CraftTheToolbar.cs" />
+    <Compile Include="15_ToolsPanelStatusBar\330_MoveTheToolBar.cs" />
+    <Compile Include="15_ToolsPanelStatusBar\332_FormatRichText.cs" />
+    <Compile Include="15_ToolsPanelStatusBar\332_FormatRichTextFile.cs" />
+    <Compile Include="15_ToolsPanelStatusBar\337_FormatRichTextEdit.cs" />
+    <Compile Include="15_ToolsPanelStatusBar\341_FormatRichTextChar.cs" />
+    <Compile Include="15_ToolsPanelStatusBar\347_FormatRichTextPara.cs" />
+    <Compile Include="15_ToolsPanelStatusBar\350_FormatRichTextStatus.cs" />
+    <Compile Include="16_TreeViewAndListView\353_ManuallyPopulateTreeView.cs" />
+    <Compile Include="16_TreeViewAndListView\357_ImagedTreeViewItem.cs" />
+    <Compile Include="16_TreeViewAndListView\355_RecurseDirectoryInefficiently.cs" />
+    <Compile Include="16_TreeViewAndListView\359_DirectoryTreeViewItem.cs" />
+    <Compile Include="16_TreeViewAndListView\361_DirectoryTreeView.cs" />
+    <Compile Include="16_TreeViewAndListView\362_RecurseDirectoryIncrementally.cs" />
+    <Compile Include="16_TreeViewAndListView\365_DiskDirectory.cs" />
+    <Compile Include="16_TreeViewAndListView\366_TemplateTheTree.cs" />
+    <Compile Include="16_TreeViewAndListView\368_TypeTreeViewItem.cs" />
+    <Compile Include="16_TreeViewAndListView\369_ClassHierarchyTreeView.cs" />
+    <Compile Include="16_TreeViewAndListView\371_ShowClassHierarchy.cs" />
+    <Compile Include="16_TreeViewAndListView\373.1_ListSystemParameters.cs" />
+    <Compile Include="16_TreeViewAndListView\373.0_SystemParam.cs" />
+    <Compile Include="16_TreeViewAndListView\377_ListSortedSystemParameters.cs" />
+    <Compile Include="16_TreeViewAndListView\379_TypeToString.cs" />
+    <Compile Include="16_TreeViewAndListView\380_MetaDataToFlags.cs" />
+    <Compile Include="16_TreeViewAndListView\382_DependencyPropertyListView.cs" />
+    <Compile Include="16_TreeViewAndListView\385_ExploreDependencyProperties.cs" />
+    <Compile Include="17_PrintAndDialogWindows\389_PrintEllipse.cs" />
+    <Compile Include="17_PrintAndDialogWindows\393_PageMarginsDialog.cs" />
+    <Compile Include="17_PrintAndDialogWindows\396_PrintWithMargins.cs" />
+    <Compile Include="17_PrintAndDialogWindows\399_PrintaBunchaButtons.cs" />
+    <Compile Include="17_PrintAndDialogWindows\402_BannerDocumentPaginator.cs" />
+    <Compile Include="17_PrintAndDialogWindows\405_PrintBanner.cs" />
+    <Compile Include="17_PrintAndDialogWindows\407_Lister.cs" />
+    <Compile Include="17_PrintAndDialogWindows\412_TextBoxWithLister.cs" />
+    <Compile Include="17_PrintAndDialogWindows\417_FontDialog.cs" />
+    <Compile Include="17_PrintAndDialogWindows\425_ChooseFont.cs" />
+    <Compile Include="17_PrintAndDialogWindows\425_PrintBetterBanner.cs" />
+    <Compile Include="18_NotePadClone\430_NotepadCloneAssemblyInfo.cs" />
+    <Compile Include="18_NotePadClone\431_NotepadCloneSettings.cs" />
+    <Compile Include="18_NotePadClone\433_NotepadClone.cs" />
+    <Compile Include="18_NotePadClone\439_NotepadCloneFile.cs" />
+    <Compile Include="18_NotePadClone\444_NotepadClonePrint.cs" />
+    <Compile Include="18_NotePadClone\446_PlainTextDocumentPaginator.cs" />
+    <Compile Include="18_NotePadClone\453_NotepadCloneEdit.cs" />
+    <Compile Include="18_NotePadClone\456_FindReplaceDialog.cs" />
+    <Compile Include="18_NotePadClone\461_FindDialog.cs" />
+    <Compile Include="18_NotePadClone\462.0_ReplaceDialog.cs" />
+    <Compile Include="18_NotePadClone\462.1_Direction.cs" />
+    <Compile Include="18_NotePadClone\463_NotepadCloneFind.cs" />
+    <Compile Include="18_NotePadClone\467_WordWrapMenuItem.cs" />
+    <Compile Include="18_NotePadClone\469_NotepadCloneFormat.cs" />
+    <Compile Include="18_NotePadClone\471_NotepadCloneView.cs" />
+    <Compile Include="18_NotePadClone\472_NotepadCloneHelp.cs" />
+    <Compile Include="18_NotePadClone\473_AboutDialog.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="19_XAML\" />
+    <Folder Include="20_PropsAndAttributes\" />
+    <Folder Include="21_Resources\" />
+    <Folder Include="22_WindowsPagesAndNavigation\" />
+    <Folder Include="23_DataBinding\" />
+    <Folder Include="24_Styles\" />
+    <Folder Include="25_Templates\" />
+    <Folder Include="26_InputAndGettingData\" />
+    <Folder Include="27_GraphicFigures\" />
+    <Folder Include="28_GeometryAndPathClasses\" />
+    <Folder Include="29_Conversions\" />
+    <Folder Include="30_Animations\" />
+    <Folder Include="31_WorkWithGraphic\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
