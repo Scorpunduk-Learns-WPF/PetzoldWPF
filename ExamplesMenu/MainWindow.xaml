@@ -68,7 +68,7 @@
                 x:Name ="runSelectedExample"
                 Click="RunSelectedExample_Click"
                 >
-                Run Seleted Example
+                Run Selected Example
             </Button>
         </StackPanel>
         
